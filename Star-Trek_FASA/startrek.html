@@ -1,0 +1,612 @@
+
+<div class="header" style="width: 100%;">
+    <h1 style="text-align: center;">Star Trek: The Role-Playing Game</h1>
+    <br>
+    <h3 style="text-align: center;">Character Record</h3>
+</div>
+
+<div style="clear:both"></div>
+
+<div class="basic-info" style="width: 100%;">
+    <div style="float: left;">Name: <input type="text" class="basic-input" name="attr_character_name" style="width: 636px;"></div>
+    <div style="float: left;">Age: <input type="text" class="basic-input" name="attr_age" style="width: 100px;"></div>
+    <br>
+    <div style="float: left;">Rank: <input type="text" class="basic-input" name="attr_rank" style="width: 300px;"></div>
+    <div style="float: left;">Ship: <input type="text" class="basic-input" name="attr_ship" style="width: 300px;"></div>
+    <div style="float: left;">Sex: <input type="text" class="basic-input" name="attr_sex" style="width: 100px;"></div>
+    <br>
+    <div style="float: left;">Current Assignment: <input type="text" class="basic-input" name="attr_current_assignment" style="width: 550px;"></div>
+    <div style="float: left;">Race: <input type="text" class="basic-input" name="attr_race" style="width: 100px;"></div>
+</div>
+
+<div style="clear:both"></div>
+
+<div class="stats" style="width: 100%;">
+    <table class="stats-table">
+        <tr>
+            <td class="stats-table-header"><button class="roll-link" type="roll" value='/roll 1d100<@{str}' name="roll_str_check"></button>STR <input type="number" name="attr_str"></td>
+            <td class="stats-table-header"><button class="roll-link" type="roll" value='/roll 1d100<@{end}' name="roll_end_check"></button>END <input type="number" name="attr_end"></td>
+            <td class="stats-table-header"><button class="roll-link" type="roll" value='/roll 1d100<@{int}' name="roll_int_check"></button>INT <input type="number" name="attr_int"></td>
+            <td class="stats-table-header"><button class="roll-link" type="roll" value='/roll 1d100<@{dex}' name="roll_dex_check"></button>DEX <input type="number" name="attr_dex"></td>
+            <td class="stats-table-header"><button class="roll-link" type="roll" value='/roll 1d100<@{cha}' name="roll_cha_check"></button>CHA <input type="number" name="attr_cha"></td>
+            <td class="stats-table-header"><button class="roll-link" type="roll" value='/roll 1d100<@{luc}' name="roll_luc_check"></button>LUC <input type="number" name="attr_luc"></td>
+            <td class="stats-table-header"><button class="roll-link" type="roll" value='/roll 1d100<@{psi}' name="roll_psi_check"></button>PSI <input type="number" name="attr_psi"></td>
+        </tr>
+        <tr>
+            <td class="stats-table-td">INACT SAVE<br><input type="number" name="attr_inact_save"></td>
+            <td class="stats-table-td">UNC THRESH<br><input type="number" name="attr_unc_thresh"></td>
+            <td class="stats-table-td">MAX OP END<br><input type="number" name="attr_max_op_end"></td>
+            <td class="stats-table-td">CURR OP END<br><input type="number" name="attr_curr_op_end"></td>
+            <td class="stats-table-td">TO HIT MOD<br><input type="number" name="attr_to_hit_mod"></td>
+            <td class="stats-table-td">TO HIT HTH<br><input type="number" name="attr_to_hit_hth"></td>
+            <td class="stats-table-td">TO HIT<br><input type="number" name="attr_to_hit"></td>
+        </tr>
+        <tr>
+            <td class="stats-table-td">WOUND HEAL RATE<br><input type="number" name="attr_inact_save"></td>
+            <td class="stats-table-td">FATIGUE HEAL RATE<br><input type="number" name="attr_inact_save"></td>
+            <td class="stats-table-invis"></td>
+            <td class="stats-table-header">AP <input type="number" name="attr_AP"></td>
+            <td class="stats-table-invis"></td>
+            <td class="stats-table-td">BARE HAND DMG<br><input type="number" name="attr_inact_save"></td>
+            <td class="stats-table-td">DMG<br><input type="number" name="attr_inact_save"></td>
+        </tr>
+    </table>
+</div>
+
+<div style="clear:both"></div>
+
+<div class="experience" style="width: 100%;">
+    <table>
+        <tr>
+            <td style="text-align: left;" colspan="2"><h3>Service Experience Chart</h3></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Cadet Cruise 1</span></div></th>
+            <th class="exp-table-vert" rowspan="2"><div><span>Cadet Cruise 2</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Cadet Cruise 3</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Cadet Cruise 4</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Cadet Cruise 5</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Branch School</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Department Head</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Command School</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Tour 1</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Tour 2</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Tour 3</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Tour 4</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Tour 5</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Tour 6</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Tour 7</span></div></td>
+            <th class="exp-table-vert" rowspan="2"><div><span>Tour 8</span></div></td>
+        </tr>
+        <tr>
+            <td style="text-align: left; width: 200px;"><h4>Assignment:</h4></td>
+        </tr>
+        <tr>
+            <td class="exp-table-row-header">Constitution-Class Starship</td>
+            <td></td>
+            <td class="exp-table-visible"><input type="text" name="attr_ccs_c1"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_ccs_c2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_ccs_c3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_ccs_c4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_ccs_c5"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="exp-table-visible"><input type="text" name="attr_ccs_t1"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_ccs_t2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_ccs_t3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_ccs_t4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_ccs_t5"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_ccs_t6"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_ccs_t7"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_ccs_t8"></td>
+
+        </tr>
+        <tr>
+            <td class="exp-table-row-header">Galaxy Exploration Command</td>
+            <td></td>
+            <td class="exp-table-visible"><input type="text" name="attr_gec_c1"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_gec_c2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_gec_c3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_gec_c4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_gec_c5"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="exp-table-visible"><input type="text" name="attr_gec_t1"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_gec_t2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_gec_t3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_gec_t4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_gec_t5"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_gec_t6"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_gec_t7"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_gec_t8"></td>
+        </tr>
+        <tr>
+            <td class="exp-table-row-header">Military Operations Command</td>
+            <td></td>
+            <td class="exp-table-visible"><input type="text" name="attr_moc_c1"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_moc_c2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_moc_c3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_moc_c4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_moc_c5"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="exp-table-visible"><input type="text" name="attr_moc_t1"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_moc_t2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_moc_t3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_moc_t4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_moc_t5"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_moc_t6"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_moc_t7"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_moc_t8"></td>
+        </tr>
+        <tr>
+            <td class="exp-table-row-header">Colonial Operations Command</td>
+            <td></td>
+            <td class="exp-table-visible"><input type="text" name="attr_coc_c1"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_coc_c2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_coc_c3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_coc_c4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_coc_c5"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="exp-table-visible"><input type="text" name="attr_coc_t1"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_coc_t2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_coc_t3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_coc_t4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_coc_t5"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_coc_t6"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_coc_t7"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_coc_t8"></td>
+        </tr>
+        <tr>
+            <td class="exp-table-row-header">Merchant Marine Command</td>
+            <td></td>
+            <td class="exp-table-visible"><input type="text" name="attr_mmc_c1"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_mmc_c2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_mmc_c3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_mmc_c4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_mmc_c5"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="exp-table-visible"><input type="text" name="attr_mmc_t1"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_mmc_t2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_mmc_t3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_mmc_t4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_mmc_t5"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_mmc_t6"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_mmc_t7"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_mmc_t8"></td>
+        </tr>
+        <tr>
+            <td class="exp-table-row-header">Starbase Headquarters Command</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="exp-table-visible"><input type="text" name="attr_shc_t1"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_shc_t2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_shc_t3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_shc_t4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_shc_t5"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_shc_t6"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_shc_t7"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_shc_t8"></td>
+        </tr>
+        <tr>
+            <td class="exp-table-row-header">Star Fleet Academy</td>
+            <td class="exp-table-visible">&#10004;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="exp-table-visible">&#10004;</td>
+            <td class="exp-table-visible"><input type="checkbox" name="attr_sfa_dh"></td>
+            <td class="exp-table-visible"><input type="checkbox" name="attr_sfa_cs"></td>
+            <td class="exp-table-visible"><input type="checkbox" name="attr_sfa_t1"></td>
+            <td class="exp-table-visible"><input type="checkbox" name="attr_sfa_t2"></td>
+            <td class="exp-table-visible"><input type="checkbox" name="attr_sfa_t3"></td>
+            <td class="exp-table-visible"><input type="checkbox" name="attr_sfa_t4"></td>
+            <td class="exp-table-visible"><input type="checkbox" name="attr_sfa_t5"></td>
+            <td class="exp-table-visible"><input type="checkbox" name="attr_sfa_t6"></td>
+            <td class="exp-table-visible"><input type="checkbox" name="attr_sfa_t7"></td>
+            <td class="exp-table-visible"><input type="checkbox" name="attr_sfa_t8"></td>
+        </tr>
+        <tr>
+            <td class="exp-table-row-header">Tour Length (years)</td>
+            <td class="exp-table-visible">4</td>
+            <td class="exp-table-visible">.5</td>
+            <td class="exp-table-visible"><input type="text" name="attr_tl_c2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_tl_c3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_tl_c4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_tl_c5"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="exp-table-visible"><input type="text" name="attr_tl_t1"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_tl_t2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_tl_t3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_tl_t4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_tl_t5"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_tl_t6"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_tl_t7"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_tl_t8"></td>
+        </tr>
+        <tr>
+            <td class="exp-table-row-header">Officer Efficiency Report</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="exp-table-visible"><input type="text" name="attr_oer_t1"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_oer_t2"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_oer_t3"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_oer_t4"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_oer_t5"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_oer_t6"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_oer_t7"></td>
+            <td class="exp-table-visible"><input type="text" name="attr_oer_t8"></td>
+        </tr>
+    </table>
+</div>
+
+<div style="clear:both"></div>
+
+<div class="skills" style="width: 100%;">
+  <br>
+    <h3>Skill List</h3>
+  <br>
+    <table style="width: 100%">
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_administration}' name="roll_administration_check"></button>Administration</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_administration"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_life_sciences_3}' name="roll_lifesci3_check"></button><input type="text" name="attr_skill_life_sciences_3_name" value="Life Sciences 3"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_life_sciences_3"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_small_equipment_sys_tech}' name="roll_smequipsystech_check"></button>Small Equipment Sys Tech</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_small_equipment_sys_tech"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_artistic_expression}' name="roll_artexpress_check"></button>Artistic Expression*<input type="text" name="attr_skill_artistic_expression_name" style="width: 75px;" value="Artistic Expression 1"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_artistic_expression"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_life_support_sys_tech}' name="roll_lifesupsystech_check"></button>Life Support Systems Tech</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_life_support_sys_tech"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_small_unit_tactics}' name="roll_smequipsystech_check"></button>Small Unit Tactics</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_small_unit_tactics"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_bribery}' name="roll_bribery_check"></button>Bribery</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_bribery"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_marksmanship_archaic}' name="roll_marksmanarchaic_check"></button>Marksmanship, Archaic*<input type="text" name="attr_skill_marksmanship_archaic_name" style="width: 45px;" value="Marksmanship, Archaic 1"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_marksmanship_archaic"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_social_sciences}' name="roll_socialsci_check"></button>Social Sciences*<input type="text" name="attr_skill_social_sciences_name" style="width: 90px;" value="Social Sciences 1"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_social_sciences"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_carousing}' name="roll_carousing_check"></button>Carousing</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_carousing"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_marksmanship_modern}' name="roll_marksmanmodern_check"></button>Marksmanship, Modern</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_marksmanship_modern"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_social_sciences_2}' name="roll_socialsci2_check"></button><input type="text" name="attr_skill_social_sciences_2_name" value="Social Sciences 2"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_social_sciences_2"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_cloaking_device_technology}' name="roll_cloakdevicetech_check"></button>Cloaking Device Technology</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_cloaking_device_technology"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_mechanical_engineering}' name="roll_mecheng_check"></button>Mechanical Engineering</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_mechanical_engineering"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_social_sciences_3}' name="roll_socialsci3_check"></button><input type="text" name="attr_skill_social_sciences_3_name"  value="Social Sciences 3"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_social_sciences_3"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_cloaking_procedures}' name="roll_cloakproc_check"></button>Cloaking Procedures</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_cloaking_procedures"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_medical_sciences}' name="roll_medsci_check"></button>Medical Sciences*<input type="text" name="attr_skill_medical_sciences_name" style="width: 80px;"  value="Medical Sciences 1"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_medical_sciences"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_social_sciences_4}' name="roll_socialsci4_check"></button><input type="text" name="attr_skill_social_sciences_4_name"  value="Social Sciences 4"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_social_sciences_4"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_comm_systems_operation}' name="roll_commsysop_check"></button>Comm. Systems Operation</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_comm_systems_operation"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_medical_sciences_2}' name="roll_medsci2_check"></button><input type="text" name="attr_skill_medical_sciences_2_name"  value="Medical Sciences 2"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_medical_sciences_2"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_space_sciences}' name="roll_spacesci_check"></button>Space Sciences*, Astronomy</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_space_sciences"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_comm_systems_technology}' name="roll_commsystech_check"></button>Comm. Systems Technology</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_comm_systems_technology"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_medical_sciences_3}' name="roll_medsci3_check"></button><input type="text" name="attr_skill_medical_sciences_3_name"  value="Medical Sciences 3"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_medical_sciences_3"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_space_sciences_2}' name="roll_spacesci2_check"></button><input type="text" name="attr_skill_space_sciences_2_name"  value="Space Sciences 2"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_space_sciences_2"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_computer_operation}' name="roll_compop_check"></button>Computer Operation</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_computer_operation"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_negotiation_diplomacy}' name="roll_negdiplo_check"></button>Negotiation/Diplomacy</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_negotiation_diplomacy"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_space_sciences_3}' name="roll_spacesci3_check"></button><input type="text" name="attr_skill_space_sciences_3_name"  value="Space Sciences 3"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_space_sciences_3"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_computer_technology}' name="roll_comptech_check"></button>Computer Techology</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_computer_technology"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_personal_combat_armed}' name="roll_perscombarm_check"></button>Personal Cmbt, Armed<input type="text" name="attr_skill_personal_combat_armed_name" style="width: 55px;"  value="Personal Combat Armed 1"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_personal_combat_armed"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_sports}' name="roll_sports_check"></button>Sports*<input type="text" name="attr_skill_sports_name" style="width: 145px;"  value="Sports 1"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_sports"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_damage_control_procedures}' name="roll_dmgcontproc_check"></button>Damage Control Procedures</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_damage_control_procedures"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_personal_combat_armed_2}' name="roll_perscombarm2_check"></button><input type="text" name="attr_skill_personal_combat_armed_2_name"  value="Personal Combat Armed 2"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_personal_combat_armed_2"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_sports_2}' name="roll_sports2_check"></button><input type="text" name="attr_skill_sports_2_name"  value="Sports 2"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_sports_2"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_deflector_shield_operation}' name="roll_defshldop_check"></button>Deflector Sheild Operation</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_deflector_shield_operation"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_personal_combat_unarmed}' name="roll_perscombunarm_check"></button>Personal Combat, Unarmed</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_personal_combat_unarmed"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_starship_combat_strat_tactics}' name="roll_starshipcombstrattac_check"></button>Starship Combat Strat/Tactics</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_starship_combat_strat_tactics"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_deflector_shield_technology}' name="roll_defshldtech_check"></button>Deflector Shield Technology</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_deflector_shield_technology"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_personal_weapons_technology}' name="roll_persweaptech_check"></button>Personal Weapons Technology</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_personal_weapons_technology"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_starship_helm_operation}' name="roll_starshiphelmop_check"></button>Starship Helm Operation</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_starship_helm_operation"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_electronics_technology}' name="roll_electech_check"></button>Electronics Technology</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_electronics_technology"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_physical_sciences}' name="roll_physsci_check"></button>Physical Sciences*<input type="text" name="attr_skill_physical_sciences_name" style="width: 80px;"  value="Physical Sciences 1"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_physical_sciences"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_starship_sensors}' name="roll_starshipsensors_check"></button>Starship Sensors</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_starship_sensors"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_environmental_technology}' name="roll_envtech_check"></button>Environmental Technology</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_environmental_technology"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_physical_sciences_2}' name="roll_physsci2_check"></button><input type="text" name="attr_skill_physical_sciences_2_name"  value="Physical Sciences 2"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_physical_sciences_2"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_starship_weaponry_operation}' name="roll_starshipweapop_check"></button>Starship Weaponry Operation</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_starship_weaponry_operation"></td>
+        </tr>
+        <tr>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_gaming}' name="roll_gaming_check"></button>Gaming*</button><input type="text" name="attr_skill_gaming_name" style="width: 135px;"  value="Gaming 1"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_gaming"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_physical_sciences_3}' name="roll_physsci3_check"></button><input type="text" name="attr_skill_physical_sciences_3_name"  value="Physical Sciences 3"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_physical_sciences_3"></td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_starship_weapon_tech}' name="roll_starshipweaptech_check"></button>Starship Weaponry Technology</td>
+            <td class="skill-list-spacer"></td>
+            <td class="skill-list-number"><input type="number" name="attr_skill_starship_weapon_tech"></td>
+        </tr>
+        <tr>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_holodeck_op_procedures}' name="roll_holodeckopproc_check"></button>Holodeck Op Procedure</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_holodeck_op_procedures"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_planetary_sciences}' name="roll_planetsci_check"></button>Planetary Sciences*</button><input type="text" name="attr_skill_planetary_sciences_name" style="width: 70px;"  value="Planetary Sciences 1"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_planetary_sciences"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_streetwise}' name="roll_streetwise_check"></button>Streetwise</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_streetwise"></td>
+        </tr>
+        <tr>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_holodeck_systems_technology}' name="roll_holosystech_check"></button>Holodeck Systems Technology</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_holodeck_systems_technology"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_planetary_sciences_2}' name="roll_planetsci2_check"></button></button><input type="text" name="attr_skill_planetary_sciences_2_name"  value="Planetary Sciences 2"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_planetary_sciences_2"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_surveillance}' name="roll_surveillance_check"></button>Surveillance</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_surveillance"></td>
+        </tr>
+        <tr>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_instruction}' name="roll_instruction_check"></button>Instruction</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_instruction"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_planetary_sciences_3}' name="roll_planetsci3_check"></button></button><input type="text" name="attr_skill_planetary_sciences_3_name"  value="Planetary Sciences 3"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_planetary_sciences_3"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_transporter_op_procedure}' name="roll_transopproc_check"></button>Transporter Op Procedure</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_transporter_op_procedure"></td>
+        </tr>
+        <tr>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_interrogation}' name="roll_interrogation_check"></button>Interrogation</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_interrogation"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_planetary_survival}' name="roll_planetsurvive_check"></button>Planetary Survival* <input type="text" name="attr_skill_planetary_survival_name" style="width: 75px;"  value="Planetary Survival 1"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_planetary_survival"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_transporter_systems_tech}' name="roll_transsystech_check"></button>Transporter Systems Tech</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_transporter_systems_tech"></td>
+        </tr>
+        <tr>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_language}' name="roll_language_check"></button>Language*<input type="text" name="attr_skill_language_name" style="width: 125px;"  value="Language 1"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_language"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_planetary_survival_2}' name="roll_planetsurvive2_check"></button><input type="text" name="attr_skill_planetary_survival_2_name"  value="Planetary Survival 2"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_planetary_survival_2"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_trivia}' name="roll_trivia_check"></button>Trivia* <input type="text" name="attr_skill_trivia_name" style="width: 150px;"  value="Trivia 1"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_trivia"></td>
+        </tr>
+        <tr>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_language_2}' name="roll_language2_check"></button><input type="text" name="attr_skill_language_2_name"  value="Language 2"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_language_2"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_planetary_survival_3}' name="roll_planetsurvive3_check"></button><input type="text" name="attr_skill_planetary_survival_3_name"  value="Planetary Survival 3"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_planetary_survival_3"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_trivia_2}' name="roll_trivia2_check"></button><input type="text" name="attr_skill_trivia_2_name"  value="Trivia 2"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_trivia_2"></td>
+        </tr>
+        <tr>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_language_3}' name="roll_language3_check"></button><input type="text" name="attr_skill_language_3_name"  value="Language 3"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_language_3"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_security_procedures}' name="roll_secproc_check"></button>Security Procedures</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_security_procedures"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_trivia_3}' name="roll_trivia3_check"></button><input type="text" name="attr_skill_trivia_3_name"  value="Trivia 3"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_trivia_3"></td>
+        </tr>
+        <tr>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_leadership}' name="roll_leadership_check"></button>Leadership</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_leadership"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_shuttlecraft_pilot}' name="roll_shuttlepilot_check"></button>Shuttlecraft Pilot</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_shuttlecraft_pilot"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_vehicle_operation}' name="roll_vehicleop_check"></button>Vehicle Operation <input type="text" name="attr_skill_vehicle_operation_name" style="width: 85px;"  value="Vehicle Operation 1"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_vehicle_operation"></td>
+        </tr>
+        <tr>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_life_sciences}' name="roll_lifesci_check"></button>Life Sciences* <input type="text" name="attr_skill_life_sciences_name" style="width: 100px;"  value="Life Sciences 1"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_life_sciences"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_shuttlecraft_systems_tech}' name="roll_shuttlesystech_check"></button>Shuttlecraft Systems Tech</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_shuttlecraft_systems_tech"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_warp_drive_technology}' name="roll_warpdrivetech_check"></button>Warp Drive Technology</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_warp_drive_technology"></td>
+        </tr>
+        <tr>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_life_sciences_2}' name="roll_lifesci2_check"></button><input type="text" name="attr_skill_life_sciences_2_name"  value="Life Sciences 2"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_life_sciences_2"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_small_equipment_systems_op}' name="roll_smequipsysop_check"></button>Small Equipment Systems Op</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_small_equipment_systems_op"></td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-name"><button class="roll-link" type="roll" value='/roll 1d100<@{skill_zero_g_operation}' name="roll_zerogop_check"></button>Zero-G Operations</td>
+          <td class="skill-list-spacer"></td>
+          <td class="skill-list-number"><input type="number" name="attr_skill_zero_g_operation"></td>
+        </tr>
+    </table>
+</div>

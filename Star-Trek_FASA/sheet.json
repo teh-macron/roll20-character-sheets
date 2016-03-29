@@ -1,0 +1,7 @@
+{
+    "html": "startrek.html",
+    "css": "startrek.css",
+    "authors": "Joseph Green",
+    "preview": "startrek_preview.png",
+    "instructions": "Based on the sheet from the FASA Star Trek book. All roll buttons simply give you a 1d100<VAR check."
+}

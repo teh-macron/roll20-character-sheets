@@ -1,0 +1,105 @@
+.charsheet .sheet-basic-input {
+    margin: 5px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 0px 2px 0px;
+}
+
+.charsheet td.sheet-stats-table-header {
+    background: black;
+    color: white;
+    font-style: bold;
+    font-size: 20px;
+    border-width: 0px 1px 0px 0px;
+    border-style: solid;
+    border-color: white;
+    width: 115px;
+    height: 35px;
+    text-align: center;
+}
+
+.charsheet .sheet-stats-table-header button {
+    width: 17px;
+    height: 20px;
+}
+
+.charsheet .sheet-stats-table-header button::before {
+    font-size: 11px;
+}
+
+.charsheet td.sheet-stats-table-td {
+    text-align: center;
+    font-size: 15px;
+    height: 55px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.charsheet td.sheet-stats-table-invis {
+
+}
+
+.charsheet th.sheet-exp-table-vert {
+  /* Something you can count on */
+  height: 140px;
+  white-space: nowrap;
+}
+
+.charsheet th.sheet-exp-table-vert > div {
+    transform:
+        /* Magic Numbers */
+        translate(25px, 51px)
+        /* 45 is really 360 - 45 */
+        rotate(315deg);
+    width: 30px;
+}
+
+.charsheet th.sheet-exp-table-vert > div > span {
+    border-bottom: 1px solid #ccc;
+    padding: 0px 5px;
+}
+
+.charsheet td.sheet-exp-table-row-header {
+    text-align: right;
+    width: 200px;
+
+}
+
+.charsheet td.sheet-exp-table-visible {
+    width: 22px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    background: white;
+}
+
+.charsheet td.sheet-exp-table-visible input {
+    background-color: white;
+    border-style: none;
+    font-size: 9px;
+    width: 22px;
+}
+
+.charsheet td.sheet-skill-list-name {
+    width: 250px;
+    text-align: left;
+}
+
+.charsheet td.sheet-skill-list-spacer {
+    width: 5px;
+}
+
+.charsheet td.sheet-skill-list-number {
+
+}
+
+.charsheet button.sheet-roll-link {
+    height: 25px;
+}
+
+.charsheet td.sheet-skill-list-name input {
+    width: 190px;
+}
